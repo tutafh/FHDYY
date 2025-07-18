@@ -21,7 +21,7 @@ function LoginPageClient() {
   const shouldAskUsername =
     typeof window !== 'undefined' &&
     (window as any).RUNTIME_CONFIG?.STORAGE_TYPE &&
-    (window as any).RUNTIME_CONFIG?.STORAGE_TYPE !== '';
+    (window as any).RUNTIME_CONFIG?.STORAGE_TYPE !== 'localstorage';
 
   // 是否允许注册
   const enableRegister =
